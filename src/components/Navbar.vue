@@ -1,7 +1,16 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
+const { t, locale } = useI18n();
 const isMenuOpen = ref(false);
+
+/**
+ * 切换语言
+ */
+const toggleLanguage = () => {
+  locale.value = locale.value === 'zh' ? 'en' : 'zh';
+};
 
 /**
  * 切换移动端菜单展开状态
@@ -10,14 +19,14 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
-const navLinks = [
-  { name: '首页', href: '#home' },
-  { name: '功能', href: '#features' },
-  { name: '优势', href: '#advantages' },
-  { name: '评价', href: '#testimonials' },
-  { name: '下载', href: '#download' },
-  { name: '关于我们', href: '#about' },
-];
+const navLinks = computed(() => [
+  { name: t('nav.home'), href: '#home' },
+  { name: t('nav.features'), href: '#features' },
+  { name: t('nav.advantages'), href: '#advantages' },
+  { name: t('nav.testimonials'), href: '#testimonials' },
+  { name: t('nav.download'), href: '#download' },
+  { name: t('nav.about'), href: '#about' },
+]);
 </script>
 
 <template>
@@ -41,39 +50,59 @@ const navLinks = [
         >
           {{ link.name }}
         </a>
+        
+        <!-- Language Switcher -->
+        <button 
+          @click="toggleLanguage"
+          class="text-muted hover:text-text font-medium transition-colors duration-300 flex items-center gap-1"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+          </svg>
+          {{ locale === 'zh' ? 'EN' : '中文' }}
+        </button>
+
         <a href="#download" class="btn-primary">
-          立即下载
+          {{ t('nav.download_now') }}
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
-      <button 
-        class="md:hidden text-muted hover:text-text transition-colors duration-300"
-        @click="toggleMenu"
-        aria-label="Toggle menu"
-      >
-        <svg 
-          class="w-6 h-6" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
+      <div class="flex items-center gap-4 md:hidden">
+        <button 
+          @click="toggleLanguage"
+          class="text-muted hover:text-text transition-colors duration-300"
         >
-          <path 
-            v-if="!isMenuOpen" 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-          <path 
-            v-else 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            d="M6 18L18 6M6 6l12 12"
-          ></path>
-        </svg>
-      </button>
+          {{ locale === 'zh' ? 'EN' : '中文' }}
+        </button>
+        <button 
+          class="text-muted hover:text-text transition-colors duration-300"
+          @click="toggleMenu"
+          aria-label="Toggle menu"
+        >
+          <svg 
+            class="w-6 h-6" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              v-if="!isMenuOpen" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+            <path 
+              v-else 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile Navigation -->
@@ -92,7 +121,7 @@ const navLinks = [
           {{ link.name }}
         </a>
         <a href="#download" class="btn-primary text-center">
-          立即下载
+          {{ t('nav.download_now') }}
         </a>
       </div>
     </div>

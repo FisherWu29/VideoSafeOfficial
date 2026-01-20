@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "advantages": "Advantages",
+    "testimonials": "Testimonials",
+    "download": "Download",
+    "about": "About Us",
+    "download_now": "Download Now"
+  },
+  "common": {
+    "language": "Language"
+  }
+}

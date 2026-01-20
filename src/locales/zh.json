@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "首页",
+    "features": "功能",
+    "advantages": "优势",
+    "testimonials": "评价",
+    "download": "下载",
+    "about": "关于我们",
+    "download_now": "立即下载"
+  },
+  "common": {
+    "language": "语言"
+  }
+}
