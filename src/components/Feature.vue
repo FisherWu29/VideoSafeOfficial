@@ -44,7 +44,7 @@ const features = [
 </script>
 
 <template>
-  <section id="features" class="section-padding bg-white">
+  <section id="features" class="section-padding bg-bg border-t border-white/5">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="section-title">核心功能</h2>
@@ -57,7 +57,7 @@ const features = [
           <div class="md:w-1/2">
             <div class="relative">
               <div class="absolute -top-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
-              <div class="relative bg-secondary rounded-xl shadow-xl overflow-hidden border border-gray-100">
+              <div class="relative surface overflow-hidden shadow-[0_30px_70px_-60px_rgba(124,58,237,0.9)]">
                 <img :src="feature.image" :alt="feature.title" class="w-full h-auto" />
               </div>
             </div>
@@ -65,16 +65,16 @@ const features = [
 
           <!-- Content -->
           <div class="md:w-1/2">
-            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-primary">{{ feature.title }}</h3>
-            <p class="text-lg text-dark mb-8">{{ feature.description }}</p>
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-text">{{ feature.title }}</h3>
+            <p class="text-lg text-muted mb-8">{{ feature.description }}</p>
             <ul class="space-y-4">
               <li v-for="(item, i) in feature.features" :key="i" class="flex items-start gap-3">
-                <div class="mt-1 w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <div class="mt-1 w-7 h-7 bg-primary/20 border border-primary/30 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <span class="text-dark">{{ item }}</span>
+                <span class="text-muted">{{ item }}</span>
               </li>
             </ul>
           </div>

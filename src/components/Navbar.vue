@@ -3,6 +3,9 @@ import { ref } from 'vue';
 
 const isMenuOpen = ref(false);
 
+/**
+ * 切换移动端菜单展开状态
+ */
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
@@ -18,14 +21,14 @@ const navLinks = [
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 right-0 bg-secondary/90 backdrop-blur-sm shadow-sm z-50">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-bg/70 backdrop-blur-xl border-b border-white/10">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
       <a href="#home" class="flex items-center gap-2">
-        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-[0_10px_30px_-16px_rgba(124,58,237,0.9)]">
           <span class="text-white font-bold text-xl">VS</span>
         </div>
-        <span class="text-2xl font-bold text-primary">VideoSafe</span>
+        <span class="text-2xl font-bold text-text tracking-tight">VideoSafe</span>
       </a>
 
       <!-- Desktop Navigation -->
@@ -34,7 +37,7 @@ const navLinks = [
           v-for="link in navLinks" 
           :key="link.name"
           :href="link.href"
-          class="text-dark hover:text-primary font-medium transition-colors duration-300"
+          class="text-muted hover:text-text font-medium transition-colors duration-300"
         >
           {{ link.name }}
         </a>
@@ -45,7 +48,7 @@ const navLinks = [
 
       <!-- Mobile Menu Button -->
       <button 
-        class="md:hidden text-dark hover:text-primary"
+        class="md:hidden text-muted hover:text-text transition-colors duration-300"
         @click="toggleMenu"
         aria-label="Toggle menu"
       >
@@ -76,14 +79,14 @@ const navLinks = [
     <!-- Mobile Navigation -->
     <div 
       v-if="isMenuOpen" 
-      class="md:hidden bg-secondary border-t"
+      class="md:hidden bg-bg/80 border-t border-white/10 backdrop-blur-xl"
     >
       <div class="container mx-auto px-4 py-4 flex flex-col gap-4">
         <a 
           v-for="link in navLinks" 
           :key="link.name"
           :href="link.href"
-          class="text-dark hover:text-primary font-medium py-2 transition-colors duration-300"
+          class="text-muted hover:text-text font-medium py-2 transition-colors duration-300"
           @click="toggleMenu"
         >
           {{ link.name }}

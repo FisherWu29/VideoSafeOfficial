@@ -8,11 +8,13 @@ export default {
     extend: {
       colors: {
         primary: '#7C3AED',
-        secondary: '#F5F5F7',
-        accent: '#4CD964',
-        accent2: '#7C3AED',
-        dark: '#3A3A3C',
-        light: '#F5F5F7',
+        bg: '#050611',
+        surface: '#0B0D1A',
+        surface2: '#10122A',
+        border: '#1F2133',
+        text: '#EDEBFF',
+        muted: '#A9A4C7',
+        dark: '#0A0B10',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

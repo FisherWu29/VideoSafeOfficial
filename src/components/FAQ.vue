@@ -6,6 +6,9 @@ import { ref } from 'vue';
 
 const activeIndex = ref<number | null>(null);
 
+/**
+ * 展开/收起指定问题
+ */
 const toggleFaq = (index: number) => {
   activeIndex.value = activeIndex.value === index ? null : index;
 };
@@ -39,37 +42,24 @@ const faqs = [
 </script>
 
 <template>
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-bg border-t border-white/5">
     <div class="container mx-auto px-4">
-      <div 
-        class="text-center mb-16"
-        
-        
-        
-        
-      >
+      <div class="text-center mb-16">
         <h2 class="section-title">常见问题</h2>
         <p class="section-subtitle">了解更多关于 VideoSafe 的使用方法和功能特点</p>
       </div>
 
-      <div 
-        class="max-w-3xl mx-auto space-y-4"
-        
-        
-        
-        
-      >
+      <div class="max-w-3xl mx-auto space-y-4">
         <div 
           v-for="(faq, index) in faqs" 
           :key="index"
-          class="border border-gray-200 rounded-lg overflow-hidden"
-          
+          class="surface overflow-hidden"
         >
           <button 
-            class="w-full px-6 py-4 text-left flex justify-between items-center bg-secondary hover:bg-primary/10 transition-colors duration-300"
+            class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-300"
             @click="toggleFaq(index)"
           >
-            <span class="font-medium text-lg text-dark">{{ faq.question }}</span>
+            <span class="font-medium text-lg text-text">{{ faq.question }}</span>
             <svg 
               class="w-5 h-5 text-primary transition-transform duration-300" 
               :class="activeIndex === index ? 'transform rotate-180' : ''"
@@ -83,9 +73,9 @@ const faqs = [
           
           <div 
             v-if="activeIndex === index"
-            class="px-6 py-4 bg-white border-t border-gray-200"
+            class="px-6 py-4 bg-white/5 border-t border-white/10"
           >
-            <p class="text-dark">{{ faq.answer }}</p>
+            <p class="text-muted leading-relaxed">{{ faq.answer }}</p>
           </div>
         </div>
       </div>
