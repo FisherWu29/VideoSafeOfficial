@@ -66,12 +66,12 @@ const faqs = [
           
         >
           <button 
-            class="w-full px-6 py-4 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors duration-300"
+            class="w-full px-6 py-4 text-left flex justify-between items-center bg-secondary hover:bg-primary/10 transition-colors duration-300"
             @click="toggleFaq(index)"
           >
-            <span class="font-medium text-lg">{{ faq.question }}</span>
+            <span class="font-medium text-lg text-dark">{{ faq.question }}</span>
             <svg 
-              class="w-5 h-5 text-gray-500 transition-transform duration-300" 
+              class="w-5 h-5 text-primary transition-transform duration-300" 
               :class="activeIndex === index ? 'transform rotate-180' : ''"
               fill="none" 
               stroke="currentColor" 
@@ -85,7 +85,7 @@ const faqs = [
             v-if="activeIndex === index"
             class="px-6 py-4 bg-white border-t border-gray-200"
           >
-            <p class="text-gray-700">{{ faq.answer }}</p>
+            <p class="text-dark">{{ faq.answer }}</p>
           </div>
         </div>
       </div>

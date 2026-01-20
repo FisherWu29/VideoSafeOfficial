@@ -46,41 +46,19 @@ const features = [
 <template>
   <section id="features" class="section-padding bg-white">
     <div class="container mx-auto px-4">
-      <div 
-        class="text-center mb-16"
-        
-        
-        
-        
-      >
+      <div class="text-center mb-16">
         <h2 class="section-title">核心功能</h2>
         <p class="section-subtitle">VideoSafe 提供全方位的视频管理和隐私保护功能，满足您的各种需求</p>
       </div>
 
-      <div 
-        class="space-y-24"
-        
-        
-        
-        
-      >
-        <div 
-          v-for="(feature, index) in features" 
-          :key="feature.id"
-          class="flex flex-col md:flex-row items-center gap-12"
-          :class="index % 2 === 1 ? 'md:flex-row-reverse' : ''"
-          
-        >
+      <div class="space-y-24">
+        <div v-for="(feature, index) in features" :key="feature.id" class="flex flex-col md:flex-row items-center gap-12" :class="index % 2 === 1 ? 'md:flex-row-reverse' : ''">
           <!-- Image -->
           <div class="md:w-1/2">
             <div class="relative">
               <div class="absolute -top-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
-              <div class="relative bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100">
-                <img 
-                  :src="feature.image" 
-                  :alt="feature.title" 
-                  class="w-full h-auto"
-                />
+              <div class="relative bg-secondary rounded-xl shadow-xl overflow-hidden border border-gray-100">
+                <img :src="feature.image" :alt="feature.title" class="w-full h-auto" />
               </div>
             </div>
           </div>
@@ -88,15 +66,15 @@ const features = [
           <!-- Content -->
           <div class="md:w-1/2">
             <h3 class="text-2xl md:text-3xl font-bold mb-4 text-primary">{{ feature.title }}</h3>
-            <p class="text-lg text-gray-600 mb-8">{{ feature.description }}</p>
+            <p class="text-lg text-dark mb-8">{{ feature.description }}</p>
             <ul class="space-y-4">
               <li v-for="(item, i) in feature.features" :key="i" class="flex items-start gap-3">
-                <div class="mt-1 w-6 h-6 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="mt-1 w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <span class="text-gray-700">{{ item }}</span>
+                <span class="text-dark">{{ item }}</span>
               </li>
             </ul>
           </div>

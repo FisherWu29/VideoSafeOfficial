@@ -18,7 +18,7 @@ const navLinks = [
 </script>
 
 <template>
-  <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
+  <nav class="fixed top-0 left-0 right-0 bg-secondary/90 backdrop-blur-sm shadow-sm z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
       <a href="#home" class="flex items-center gap-2">
@@ -34,18 +34,18 @@ const navLinks = [
           v-for="link in navLinks" 
           :key="link.name"
           :href="link.href"
-          class="text-gray-700 hover:text-primary font-medium transition-colors duration-300"
+          class="text-dark hover:text-primary font-medium transition-colors duration-300"
         >
           {{ link.name }}
         </a>
-        <a href="#download" class="btn-accent">
+        <a href="#download" class="btn-primary">
           立即下载
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
       <button 
-        class="md:hidden text-gray-700 hover:text-primary"
+        class="md:hidden text-dark hover:text-primary"
         @click="toggleMenu"
         aria-label="Toggle menu"
       >
@@ -76,19 +76,19 @@ const navLinks = [
     <!-- Mobile Navigation -->
     <div 
       v-if="isMenuOpen" 
-      class="md:hidden bg-white border-t"
+      class="md:hidden bg-secondary border-t"
     >
       <div class="container mx-auto px-4 py-4 flex flex-col gap-4">
         <a 
           v-for="link in navLinks" 
           :key="link.name"
           :href="link.href"
-          class="text-gray-700 hover:text-primary font-medium py-2 transition-colors duration-300"
+          class="text-dark hover:text-primary font-medium py-2 transition-colors duration-300"
           @click="toggleMenu"
         >
           {{ link.name }}
         </a>
-        <a href="#download" class="btn-accent text-center">
+        <a href="#download" class="btn-primary text-center">
           立即下载
         </a>
       </div>
