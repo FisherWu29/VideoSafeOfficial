@@ -1,2 +1,6 @@
-# Single Page Application routing
-/*    /index.html   200
+# Locale entry points
+/     /zh/    302
+/zh   /zh/    301
+/en   /en/    301
+/ja   /ja/    301
+/es   /es/    301

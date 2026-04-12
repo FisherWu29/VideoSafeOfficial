@@ -1,14 +1,84 @@
 {
   "nav": {
     "home": "Home",
-    "features": "Features",
-    "advantages": "Advantages",
-    "testimonials": "Testimonials",
+    "features": "Core features",
+    "more": "More",
     "download": "Download",
-    "about": "About Us",
-    "download_now": "Download Now"
+    "faq": "FAQ",
+    "download_now": "Get on Google Play"
   },
   "common": {
-    "language": "Language"
+    "language": "Language",
+    "appName": "VideoSafe"
+  },
+  "hero": {
+    "title": "Private photo and video vault",
+    "subtitle": "Move private media into a separate vault protected by password, biometrics, and disguised access. Back up, transfer, save, and cast your personal videos with less friction.",
+    "primary": "Get it on Google Play",
+    "secondary": "View features",
+    "availability": "Android version is available now",
+    "ios": "iOS version in development",
+    "imageAlt": "VideoSafe private photo and video vault"
+  },
+  "features": {
+    "title": "Core features",
+    "subtitle": "A focused vault for protecting, organizing, and saving your private photos and videos.",
+    "items": [
+      {
+        "title": "Separate private vault",
+        "description": "Import photos and videos into a dedicated space separated from your system gallery to reduce accidental viewing and sharing."
+      },
+      {
+        "title": "Password and biometrics",
+        "description": "Unlock with your password or biometric verification so private content stays visible only to you."
+      },
+      {
+        "title": "Disguised access and intruder capture",
+        "description": "Use a disguised icon and record suspicious unlock attempts so the app draws less attention."
+      }
+    ]
+  },
+  "more": {
+    "title": "More useful tools",
+    "subtitle": "From saving to migration, the extra tools are built around private media management.",
+    "items": [
+      "Google Drive backup and restore",
+      "Local WiFi transfer",
+      "Import, export, and phone migration",
+      "Built-in private browser",
+      "Detection for common video links and streaming resources",
+      "Cast videos to TVs and other large screens"
+    ]
+  },
+  "download": {
+    "title": "Download VideoSafe",
+    "subtitle": "The Android version is live on Google Play. The iOS version is still in development.",
+    "googlePlay": "Get it on Google Play",
+    "android": "Available for Android",
+    "ios": "iOS version in development",
+    "note": "Use Google Play to get the current available version."
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "A few quick answers before you download.",
+    "items": [
+      {
+        "question": "Does VideoSafe upload my private content to a server?",
+        "answer": "Core privacy protection happens on your device. Backup is something you choose to run with options such as Google Drive."
+      },
+      {
+        "question": "Can I manage photos and videos separately from the system gallery?",
+        "answer": "Yes. VideoSafe is built to import private photos and videos into a separate vault for viewing, sorting, and management."
+      },
+      {
+        "question": "Is iOS supported now?",
+        "answer": "The Android version is available now, and the iOS version is still in development."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Private photo and video vault.",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 VideoSafe. All rights reserved."
   }
 }

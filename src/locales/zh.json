@@ -1,14 +1,84 @@
 {
   "nav": {
     "home": "首页",
-    "features": "功能",
-    "advantages": "优势",
-    "testimonials": "评价",
+    "features": "核心功能",
+    "more": "更多能力",
     "download": "下载",
-    "about": "关于我们",
-    "download_now": "立即下载"
+    "faq": "常见问题",
+    "download_now": "Google Play 下载"
   },
   "common": {
-    "language": "语言"
+    "language": "语言",
+    "appName": "VideoSafe"
+  },
+  "hero": {
+    "title": "私密照片与视频保险箱",
+    "subtitle": "将私密媒体保存到独立空间，用密码、生物识别和伪装入口保护。支持备份迁移、私密浏览器、视频保存与大屏投放。",
+    "primary": "从 Google Play 下载",
+    "secondary": "查看功能",
+    "availability": "Android 版本已上线",
+    "ios": "iOS 版本开发中",
+    "imageAlt": "VideoSafe 私密照片视频保险箱"
+  },
+  "features": {
+    "title": "核心功能",
+    "subtitle": "官网只保留最重要的信息：保护、整理、保存你的私密照片和视频。",
+    "items": [
+      {
+        "title": "独立私密保险箱",
+        "description": "将照片和视频导入独立空间，与系统相册分开管理，减少误看和误分享。"
+      },
+      {
+        "title": "密码与生物识别",
+        "description": "通过密码和生物识别验证解锁，让私密内容只对你可见。"
+      },
+      {
+        "title": "伪装入口与入侵拍照",
+        "description": "支持伪装图标，并记录可疑解锁尝试，降低应用被注意到的概率。"
+      }
+    ]
+  },
+  "more": {
+    "title": "更多实用能力",
+    "subtitle": "从保存到迁移，常用功能都围绕私密媒体管理展开。",
+    "items": [
+      "Google Drive 备份与恢复",
+      "WiFi 局域网传输",
+      "导入、导出与换机整理",
+      "内置私密浏览器",
+      "常见视频链接与流媒体资源识别",
+      "视频投屏到电视等大屏设备"
+    ]
+  },
+  "download": {
+    "title": "下载 VideoSafe",
+    "subtitle": "Android 版本已在 Google Play 上线。iOS 版本正在开发中。",
+    "googlePlay": "从 Google Play 下载",
+    "android": "适用于 Android",
+    "ios": "iOS 版本开发中",
+    "note": "请通过 Google Play 获取当前可用版本。"
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "几个下载前最常见的问题。",
+    "items": [
+      {
+        "question": "VideoSafe 会把我的私密内容上传到服务器吗？",
+        "answer": "核心隐私保护在设备本地完成。备份功能由你主动使用 Google Drive 等方式完成。"
+      },
+      {
+        "question": "可以从系统相册里分开管理照片和视频吗？",
+        "answer": "可以。VideoSafe 的主要用途就是把私密照片和视频导入独立保险箱，集中查看、整理和管理。"
+      },
+      {
+        "question": "现在支持 iOS 吗？",
+        "answer": "目前 Android 版本已上线，iOS 版本仍在开发中。"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "私密照片与视频保险箱。",
+    "privacy": "隐私政策",
+    "copyright": "© 2026 VideoSafe. All rights reserved."
   }
 }

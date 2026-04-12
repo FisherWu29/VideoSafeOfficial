@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "features": "Funciones",
+    "more": "Más",
+    "download": "Descargar",
+    "faq": "FAQ",
+    "download_now": "Google Play"
+  },
+  "common": {
+    "language": "Idioma",
+    "appName": "VideoSafe"
+  },
+  "hero": {
+    "title": "Bóveda privada para fotos y vídeos",
+    "subtitle": "Mueve tu contenido privado a una bóveda independiente protegida con contraseña, biometría y acceso camuflado. Haz copias, transfiere, guarda y envía vídeos con más comodidad.",
+    "primary": "Descargar en Google Play",
+    "secondary": "Ver funciones",
+    "availability": "Versión Android disponible",
+    "ios": "Versión iOS en desarrollo",
+    "imageAlt": "VideoSafe bóveda privada para fotos y vídeos"
+  },
+  "features": {
+    "title": "Funciones principales",
+    "subtitle": "Una bóveda clara para proteger, organizar y guardar tus fotos y vídeos privados.",
+    "items": [
+      {
+        "title": "Bóveda privada independiente",
+        "description": "Importa fotos y vídeos a un espacio separado de la galería del sistema para reducir vistas y comparticiones accidentales."
+      },
+      {
+        "title": "Contraseña y biometría",
+        "description": "Desbloquea con contraseña o verificación biométrica para que el contenido privado solo sea visible para ti."
+      },
+      {
+        "title": "Acceso camuflado y captura de intrusos",
+        "description": "Usa un icono camuflado y registra intentos sospechosos de desbloqueo para que la app pase más desapercibida."
+      }
+    ]
+  },
+  "more": {
+    "title": "Más herramientas útiles",
+    "subtitle": "Desde guardar hasta migrar, todo está pensado para gestionar contenido privado.",
+    "items": [
+      "Copia de seguridad y restauración con Google Drive",
+      "Transferencia local por WiFi",
+      "Importación, exportación y cambio de móvil",
+      "Navegador privado integrado",
+      "Detección de enlaces de vídeo y recursos de streaming habituales",
+      "Envío de vídeos a televisores y otras pantallas grandes"
+    ]
+  },
+  "download": {
+    "title": "Descarga VideoSafe",
+    "subtitle": "La versión Android ya está disponible en Google Play. La versión iOS sigue en desarrollo.",
+    "googlePlay": "Descargar en Google Play",
+    "android": "Disponible para Android",
+    "ios": "Versión iOS en desarrollo",
+    "note": "Usa Google Play para obtener la versión disponible actualmente."
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Algunas respuestas rápidas antes de descargar.",
+    "items": [
+      {
+        "question": "¿VideoSafe sube mi contenido privado a un servidor?",
+        "answer": "La protección principal de la privacidad se realiza en tu dispositivo. Las copias de seguridad son una acción que eliges usar con opciones como Google Drive."
+      },
+      {
+        "question": "¿Puedo gestionar fotos y vídeos por separado de la galería del sistema?",
+        "answer": "Sí. VideoSafe permite importar fotos y vídeos privados a una bóveda independiente para verlos, ordenarlos y gestionarlos."
+      },
+      {
+        "question": "¿Ya es compatible con iOS?",
+        "answer": "La versión Android ya está disponible, y la versión iOS sigue en desarrollo."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Bóveda privada para fotos y vídeos.",
+    "privacy": "Política de privacidad",
+    "copyright": "© 2026 VideoSafe. All rights reserved."
+  }
+}

@@ -3,10 +3,8 @@ import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import Feature from './components/Feature.vue';
 import Advantage from './components/Advantage.vue';
-import Testimonial from './components/Testimonial.vue';
 import Download from './components/Download.vue';
 import FAQ from './components/FAQ.vue';
-import About from './components/About.vue';
 import Footer from './components/Footer.vue';
 </script>
 
@@ -16,10 +14,8 @@ import Footer from './components/Footer.vue';
     <Hero />
     <Feature />
     <Advantage />
-    <Testimonial />
     <Download />
     <FAQ />
-    <About />
     <Footer />
   </div>
 </template>

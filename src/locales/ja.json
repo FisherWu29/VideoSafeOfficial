@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "features": "主な機能",
+    "more": "その他",
+    "download": "ダウンロード",
+    "faq": "FAQ",
+    "download_now": "Google Play で入手"
+  },
+  "common": {
+    "language": "言語",
+    "appName": "VideoSafe"
+  },
+  "hero": {
+    "title": "写真と動画の秘密保管庫",
+    "subtitle": "写真や動画を独立したプライベート空間へ移し、パスコード、生体認証、偽装された入口で保護。バックアップ、移行、保存、キャストにも対応します。",
+    "primary": "Google Play で入手",
+    "secondary": "機能を見る",
+    "availability": "Android 版は公開中",
+    "ios": "iOS 版は開発中",
+    "imageAlt": "VideoSafe 写真と動画の秘密保管庫"
+  },
+  "features": {
+    "title": "主な機能",
+    "subtitle": "大切な写真や動画を守り、整理し、保存するためのシンプルな保管庫です。",
+    "items": [
+      {
+        "title": "独立したプライベート保管庫",
+        "description": "写真や動画をシステムギャラリーとは別の専用スペースへ取り込み、誤表示や誤共有を減らします。"
+      },
+      {
+        "title": "パスコードと生体認証",
+        "description": "パスコードまたは生体認証でロック解除し、プライベートな内容を自分だけが見られるようにします。"
+      },
+      {
+        "title": "偽装入口と侵入者撮影",
+        "description": "偽装アイコンに対応し、不審なロック解除試行を記録して、アプリを目立ちにくくできます。"
+      }
+    ]
+  },
+  "more": {
+    "title": "便利な追加機能",
+    "subtitle": "保存から移行まで、プライベートメディア管理に必要な機能をまとめました。",
+    "items": [
+      "Google Drive でバックアップと復元",
+      "WiFi ローカル転送",
+      "インポート、エクスポート、機種変更時の整理",
+      "内蔵プライベートブラウザ",
+      "一般的な動画リンクやストリーミングの識別",
+      "テレビなど大画面への動画キャスト"
+    ]
+  },
+  "download": {
+    "title": "VideoSafe をダウンロード",
+    "subtitle": "Android 版は Google Play で公開中です。iOS 版は現在開発中です。",
+    "googlePlay": "Google Play で入手",
+    "android": "Android に対応",
+    "ios": "iOS 版は開発中",
+    "note": "現在利用できるバージョンは Google Play から入手してください。"
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "ダウンロード前によくある質問です。",
+    "items": [
+      {
+        "question": "VideoSafe はプライベートな内容をサーバーへアップロードしますか？",
+        "answer": "主要なプライバシー保護は端末上で行われます。バックアップは Google Drive などを使って自分で実行する機能です。"
+      },
+      {
+        "question": "システムギャラリーとは別に写真や動画を管理できますか？",
+        "answer": "はい。VideoSafe は写真や動画を独立した保管庫へ取り込み、表示、整理、管理できるように作られています。"
+      },
+      {
+        "question": "iOS には対応していますか？",
+        "answer": "現在は Android 版が公開中で、iOS 版は開発中です。"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "写真と動画の秘密保管庫。",
+    "privacy": "プライバシーポリシー",
+    "copyright": "© 2026 VideoSafe. All rights reserved."
+  }
+}
