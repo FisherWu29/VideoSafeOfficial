@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.videosafe.com/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.videosafe.com/en/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.videosafe.com/ja/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.videosafe.com/es/" />
+    <loc>https://allsafer.org/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://allsafer.org/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://allsafer.org/ja/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://allsafer.org/es/" />
   </url>
   <url>
-    <loc>https://www.videosafe.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.videosafe.com/en/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.videosafe.com/ja/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.videosafe.com/es/" />
+    <loc>https://allsafer.org/en/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://allsafer.org/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://allsafer.org/ja/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://allsafer.org/es/" />
   </url>
   <url>
-    <loc>https://www.videosafe.com/ja/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.videosafe.com/en/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.videosafe.com/ja/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.videosafe.com/es/" />
+    <loc>https://allsafer.org/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://allsafer.org/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://allsafer.org/ja/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://allsafer.org/es/" />
   </url>
   <url>
-    <loc>https://www.videosafe.com/es/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.videosafe.com/zh/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.videosafe.com/en/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://www.videosafe.com/ja/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.videosafe.com/es/" />
+    <loc>https://allsafer.org/es/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://allsafer.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://allsafer.org/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://allsafer.org/ja/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://allsafer.org/es/" />
+  </url>
+  <url>
+    <loc>https://allsafer.org/privacy</loc>
+  </url>
+  <url>
+    <loc>https://allsafer.org/support</loc>
   </url>
 </urlset>

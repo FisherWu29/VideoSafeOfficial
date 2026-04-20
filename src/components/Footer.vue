@@ -30,8 +30,11 @@ const navLinks = computed(() => [
           <a v-for="link in navLinks" :key="link.name" :href="link.href" class="text-muted hover:text-text transition-colors duration-200">
             {{ link.name }}
           </a>
-          <a href="/videosafe/privacy/privacy.html" class="text-muted hover:text-text transition-colors duration-200">
+          <a href="/privacy" class="text-muted hover:text-text transition-colors duration-200">
             {{ t('footer.privacy') }}
+          </a>
+          <a href="/support" class="text-muted hover:text-text transition-colors duration-200">
+            {{ t('footer.support') }}
           </a>
         </div>
       </div>
