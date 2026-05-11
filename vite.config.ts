@@ -21,6 +21,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(projectRoot, 'index.html'),
+        setting: resolve(projectRoot, 'setting/index.html'),
         zh: resolve(projectRoot, 'zh/index.html'),
         en: resolve(projectRoot, 'en/index.html'),
         ja: resolve(projectRoot, 'ja/index.html'),

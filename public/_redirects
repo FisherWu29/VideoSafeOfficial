@@ -1,6 +1,5 @@
 # Locale entry points
-/setting   /index.html   200
-/setting/   /index.html   200
+/setting   /setting/   301
 /     /zh/    302
 /zh   /zh/    301
 /en   /en/    301

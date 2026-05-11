@@ -10,7 +10,7 @@ import Footer from './components/Footer.vue';
 import SettingPage from './components/SettingPage.vue';
 
 const currentPath = computed(() => window.location.pathname.replace(/\/$/, '') || '/');
-const isSettingPage = computed(() => currentPath.value === '/setting');
+const isSettingPage = computed(() => currentPath.value === '/setting' || currentPath.value === '/setting/index.html');
 </script>
 
 <template>
