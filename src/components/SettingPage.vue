@@ -18,26 +18,13 @@ const VERSION_CONTROL_ENDPOINT = '/api/config/version-control';
 const AUTH_STORAGE_KEY = 'videosafe_setting_authorized';
 
 const booleanKeys = new Set([
-  'is_cloud_backup_enabled',
-  'is_ad_enabled',
-  'is_download_module_enabled',
-  'is_private_browser_enabled',
-  'is_youtube_parse_enabled',
+  'dl_show',
 ]);
 
 const fieldLabels: Record<string, string> = {
-  is_cloud_backup_enabled: '云备份',
-  is_ad_enabled: '广告模块',
-  is_download_module_enabled: '下载模块',
-  is_private_browser_enabled: '私密浏览器',
-  is_youtube_parse_enabled: 'YouTube 解析',
-  latest_version: '最新版本',
-  update_message: '更新提示',
-  privacy_policy_url: '隐私政策地址',
-  user_agreement_url: '用户协议地址',
-  open_source_license_url: '开源许可地址',
-  feedback_email: '反馈邮箱',
-  share_app_url: '分享地址',
+  dl_show: 'dl_show',
+  support_email: '反馈邮箱',
+  support_share_url: '分享地址',
 };
 
 const password = ref('');
@@ -62,7 +49,7 @@ const getRequestHeaders = () => ({
 
 const sortedConfigItems = computed(() => {
   const order = Object.keys(fieldLabels);
-  return [...configItems.value].sort((a, b) => {
+  return configItems.value.filter((item) => order.includes(item.key)).sort((a, b) => {
     const aIndex = order.indexOf(a.key);
     const bIndex = order.indexOf(b.key);
 
@@ -220,7 +207,7 @@ const saveVersionRule = async () => {
       throw new Error(data.error || '版本控制规则保存失败');
     }
 
-    successMessage.value = `${platform} ${version} 的 iOSimport 规则已保存`;
+    successMessage.value = `${platform} ${version} 的 dl_show 规则已保存`;
     versionForm.value.version = '';
     await loadVersionRules();
   } catch (error) {
@@ -261,7 +248,7 @@ const deleteVersionRule = async (rule: VersionRule) => {
       throw new Error(data.error || '版本控制规则删除失败');
     }
 
-    successMessage.value = `${rule.platform} ${rule.version} 的 iOSimport 规则已删除`;
+    successMessage.value = `${rule.platform} ${rule.version} 的 dl_show 规则已删除`;
     await loadVersionRules();
   } catch (error) {
     errorMessage.value = error instanceof Error ? error.message : '版本控制规则删除失败';
@@ -335,7 +322,7 @@ onMounted(() => {
           <p class="mb-2 text-sm font-medium text-primary">VideoSafe Admin</p>
           <h1 class="text-3xl font-semibold text-text">应用配置</h1>
           <p class="mt-3 max-w-2xl text-sm leading-6 text-muted">
-            普通配置写入 app_config；iOSimport 由平台和版本规则动态计算。
+            普通配置写入 app_config；dl_show 由配置值和平台版本规则共同决定。
           </p>
         </div>
 
@@ -413,8 +400,8 @@ onMounted(() => {
         <section class="rounded-lg border border-border bg-surface p-5">
           <div class="mb-5 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 class="text-lg font-semibold text-text">iOSimport 版本控制</h2>
-              <p class="mt-2 text-sm text-muted">命中平台和版本时，接口返回的 iOSimport 会变为隐藏状态。</p>
+              <h2 class="text-lg font-semibold text-text">dl_show 版本控制</h2>
+              <p class="mt-2 text-sm text-muted">命中平台和版本时，接口返回的 features.dl_show 会变为 false。</p>
             </div>
           </div>
 
@@ -466,7 +453,7 @@ onMounted(() => {
                 <tr class="border-b border-border">
                   <th class="py-3 pr-4 font-medium">平台</th>
                   <th class="py-3 pr-4 font-medium">版本</th>
-                  <th class="py-3 pr-4 font-medium">iOSimport</th>
+                  <th class="py-3 pr-4 font-medium">dl_show</th>
                   <th class="py-3 text-right font-medium">操作</th>
                 </tr>
               </thead>
